@@ -1,6 +1,7 @@
 /*GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 
+/*Variables CSS*/
 :root {
     --header-height: 3.5rem;
     /* Colours*/
@@ -36,15 +37,15 @@
 }
 
 /*Responsive topography*/
-@media screen and (min-wifth: 1150px) {
+@media screen and (min-width: 1500px) {
     :root {
     --biggest-font-size: 4.5rem;
     --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
     }
 }
 
@@ -87,7 +88,7 @@ img {
 
 /* Reusable CSS Classes*/
 .container {
-    max-width: 1120px;
+    max-width: 99%;
     margin-inline: 1.5rem;
 }
 
@@ -101,7 +102,7 @@ img {
 }
 
 .section__title-1,
-.secxtion__title-2 {
+.section__title-2 {
     position: relative;
     font-size: var(--h1-font-size);
     width: max-content;
@@ -119,7 +120,7 @@ img {
     content: "";
     width: 40px;
     height: 28px;
-    background-color: hsla(14,98%,50%,0.2);
+    background-color: hsla(14,98%,50%,.2);
     position: absolute;
     top: -4px;
     right: -8px;
@@ -134,8 +135,8 @@ geometric-box {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: var(--first color);
-    rotate: -30deg;
+    background-color: var(--first-color);
+    transform: rotate(-30deg);
 }
 
 .geometric-box::after {
@@ -181,11 +182,117 @@ geometric-box {
 }
 
 .nav__logo-circle,
-.nav__toggle{
+.nav__toggle{ 
     width: 32px;
     height: 32px;
     background-color: var(--black-color);
     color: var(--white-color);
     display: grid;
     place-items: center;
+}
+
+.nav__logo-circle{
+    border-radius: 50%;
+}
+
+.nav__toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1500px){
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        background-color: hsla(0, 0%, 0%, .75);
+        width: 100%;
+        padding-block: 1.8rem 5rem;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        transition: top .4s;
+    }
+}
+
+.nav__title,
+.nav__name,
+.nav__close{
+    color: var(--white-color);
+}
+
+.nav__title{
+    display: block;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 3.5rem;
+}
+
+.nav__name{
+    position: relative;
+    width: max-content;
+    margin: 0 auto 3rem;
+    font-size: var(--h2-font-size);
+}
+
+.nav__name::after,
+.nav__name::before{
+    content: '';
+    width: 40px;
+    height: 1px;
+    background-color: var(--text-color-light);
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+}
+
+.nav__name::before{
+    left: initial;
+    right: -4rem;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav__link{
+    position: relative;
+    color: var(--text-color-light);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    transition: color .3s;
+}
+
+.nav__link::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .3s;
+}
+
+.nav__link:hover{
+    color: var(--white-color);
+}
+
+.nav__link:hover::after{
+    width: 25px;
+}
+
+.nav__close{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show Menu */
+.show-menu{
+    top: 0;
 }
