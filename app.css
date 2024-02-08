@@ -171,3 +171,21 @@ geometric-box {
     justify-content: space-between;
     align-items: center;
 }
+
+.nav__logo{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.nav__logo-circle,
+.nav__toggle{
+    width: 32px;
+    height: 32px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: grid;
+    place-items: center;
+}
