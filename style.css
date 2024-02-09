@@ -36,7 +36,7 @@
     --z-fixed: 100;
 }
 
-/*Responsive topography*/
+/*Responsive typography*/
 @media screen and (min-width: 1500px) {
     :root {
     --biggest-font-size: 4.5rem;
@@ -131,7 +131,7 @@ img {
     bottom: -4px;
 }
 
-geometric-box {
+.geometric-box {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -296,3 +296,106 @@ geometric-box {
 .show-menu{
     top: 0;
 }
+
+/* HOME */
+.home__container{
+    padding-top: 2rem;
+}
+
+.home__name{
+    font-size: var(--biggest-font-size);
+    text-align: center;
+}
+
+.home__perfil{
+    position: relative;
+    justify-self: center;
+}
+
+.home__image{
+    width: 220px;
+}
+
+.home__img{
+    position: relative;
+    z-index: 10;
+}
+
+.home__shadow{
+    width: 100%;
+    height: 100%;
+    background-color: var(--container-color);
+    position: absolute;
+    bottom: -.75rem;
+    right: -.75rem;
+    border: 4px solid var(--black-color);
+    z-index: 5;
+    transition: background-color .4s;
+}
+
+.home__arrow,
+.home__line{
+    position: absolute;
+    /*filter: invert(1);*/
+    width: 50px;
+    transition: filter .4s;
+}
+
+.home__arrow{
+    left: 40%;
+    bottom: -3.75rem;
+}
+
+.home__line{
+    right: -3rem;
+    bottom: -.5rem;
+}
+
+.home__perfil .geometric-box{
+    top: 2.5rem;
+    left: -.7rem;
+    z-index: 10;
+}
+
+.home__social{
+    height: max-content;
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: grid;
+    row-gap: 1rem;
+}
+
+.home__social-link{
+    background-color: var(--black-color-light);
+    color: var(--white-color);
+    font-size: 1.25rem;
+    padding: 6px;
+    display: grid;
+    place-items: center;
+    transition: background-color .3s;
+}
+
+.home_-social-link:hover{
+    background-color: var(--black-color);
+}
+
+.home__info{
+    margin-top: 4rem;
+}
+
+.home__description{
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+}
+
+.home__description b{
+    background: linear-gradient(90deg, 
+                                hsla(14,98%,50%,.3),
+                                hsla(14,98%,50%,0));
+
+}
+/* End of CSS Styles */
