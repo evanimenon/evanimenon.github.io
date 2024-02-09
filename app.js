@@ -25,3 +25,12 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/* Shadow Header */
+const shadowHeader = () =>{
+    //When the scroll is greater than 50 viewport height, add the shadow-header class to the header tag
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                        : header.classList.remove('shadow-header') 
+}
+
+window.addEventListener('scroll', shadowHeader)
