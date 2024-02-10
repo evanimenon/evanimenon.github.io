@@ -5,7 +5,7 @@
 :root {
     --header-height: 3.5rem;
     /* Colours*/
-    --first-color: hsl(157, 65%, 22%);
+    --first-color: hsl(155, 69%, 26%);
     --black-color: hsl(0,0%,0%);
     --black-color-light: hsl(0,0%,40%);
     --white-color: hsl(0,0%,95%);
@@ -309,9 +309,68 @@ img {
     padding-top: 2rem;
 }
 
-.home__name{
+.animation{
+    margin: .75rem;
+    padding: .75rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.waterwave__name{
+    position: relative;
+    font-family: var(--body-font);
     font-size: var(--biggest-font-size);
     text-align: center;
+    white-space: nowrap;
+}
+
+.waterwave__name h1{
+    /*color: #fff;*/
+    font-size: var(--biggest-font-size);
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.waterwave__name h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(40, 105, 73, 0.325);
+}
+
+.waterwave__name h1:nth-child(2){
+    color: var(--black-color);
+animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        clip-path: polygon(
+            0% 40%, 
+            16% 38%, 
+            33% 45%, 
+            54% 55%, 
+            70% 56%, 
+            84% 54%, 
+            100% 48%, 
+            100% 100%, 
+            0% 100%
+        );
+    }
+
+    50% {
+        clip-path: polygon(
+            0% 55%, 
+            15% 60%, 
+            34% 61%, 
+            51% 57%, 
+            67% 45%, 
+            84% 40%, 
+            100% 42%, 
+            100% 100%, 
+            0% 100%);
+    }
 }
 
 .home__perfil{
