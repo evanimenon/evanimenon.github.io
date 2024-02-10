@@ -887,4 +887,56 @@ animation: animate 4s ease-in-out infinite;
     top: -16px
 }
 
-/*  1:23:51  */
+.contact__social{
+    display: grid;
+    row-gap: 1rem;
+    background-color: hsl(0,0%,10%);
+    padding-block: 1rem 2rem;
+    text-align: center;
+}
+
+.contact__social-arrow{
+    width: 32px;
+    margin: 0 auto;
+    filter: invert(1)
+}
+
+.contact__social-data{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.contact__social-description-1{
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    margin-bottom: .5rem;
+}
+
+.contact__social-description-2{
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.contact__social-links{
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+
+.contact__social-link{
+    background-color: var(--black-color-light);
+    padding: 6px;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    display: grid;
+    place-items: center;
+    transition: background-color .3s;
+}
+
+.contact__social-link:hover{
+    background-color: var(--first-color);
+}
+
+/* EMAIL JS         1:27:30*/
