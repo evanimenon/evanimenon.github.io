@@ -1519,7 +1519,6 @@ animation: animate 4s ease-in-out infinite;
     .footer__container{
         padding-block: 4rem;
         grid-template-columns: repeat(2, max-content);
-        /*justify-content: space-between;*/
         justify-content: center;
     }
     .footer__links{
