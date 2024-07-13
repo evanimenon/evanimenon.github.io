@@ -1036,6 +1036,7 @@ animation: animate 4s ease-in-out infinite;
 /* FOOTER */
 .footer{
     background-color: var(--black-color);
+    text-align: center;
 }
 
 .footer__container{
@@ -1514,10 +1515,12 @@ animation: animate 4s ease-in-out infinite;
         box-shadow: 4px 0 8px hsla(0, 0%, 4%, .3);
     }
 
+
     .footer__container{
         padding-block: 4rem;
         grid-template-columns: repeat(2, max-content);
-        justify-content: space-between;
+        /*justify-content: space-between;*/
+        justify-content: center;
     }
     .footer__links{
         column-gap: 3rem;
