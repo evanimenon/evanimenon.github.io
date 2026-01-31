@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing - Evani Menon</title>
+    <meta name="description" content="Essays, articles, and reflections on technology, society, and personal growth by Evani Menon">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Evani Menon</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Portfolio</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="writing.html" class="nav-link active">Writing</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="sun-icon">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="12" y1="2" x2="12" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="12" y1="20" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="4" y1="12" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="22" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="4.93" x2="17.66" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="17.66" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="19.07" x2="17.66" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="6.34" x2="4.93" y2="4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="moon-icon">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="writing-page">
+        <section class="writing-hero">
+            <div class="container">
+                <h1 class="page-title">Writing</h1>
+                <p class="page-subtitle">Essays, articles, and reflections on technology, society, and personal growth</p>
+                
+                <div class="search-filter">
+                    <div class="search-box">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="m21 21-4.35-4.35"/>
+                        </svg>
+                        <input type="text" id="search-input" placeholder="Search articles..." />
+                    </div>
+                    
+                    <div class="tag-filters">
+                        <button class="tag-btn active" data-tag="all">All</button>
+                        <button class="tag-btn" data-tag="essay">#Essay</button>
+                        <button class="tag-btn" data-tag="article">#Article</button>
+                        <button class="tag-btn" data-tag="research">#Research</button>
+                        <button class="tag-btn" data-tag="personal">#Personal</button>
+                        <button class="tag-btn" data-tag="bookreview">#BookReview</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="writing-content">
+            <div class="container">
+                <div class="featured-writing">
+                    <article class="featured-post" data-tags="research article">
+                        <div class="featured-post-tag">#Research</div>
+                        <h2 class="featured-post-title">Social Stratification and Neurodivergence in India</h2>
+                        <p class="featured-post-excerpt">
+                            Exploring the intersection of social hierarchies and neurodevelopmental conditions in contemporary Indian society.
+                            This research examines how systemic inequalities affect diagnosis, treatment, and social acceptance of neurodivergent individuals.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">15 min read</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="posts-grid">
+                    <article class="post-card" data-tags="essay personal">
+                        <div class="post-tags">
+                            <span class="post-tag">#Essay</span>
+                            <span class="post-tag">#Personal</span>
+                        </div>
+                        <h3 class="post-title">Breaking the Binary</h3>
+                        <p class="post-excerpt">
+                            A critical analysis of gender norms and identity constructs in modern discourse. Examining how binary thinking 
+                            limits our understanding of human diversity and identity.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">8 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-tags="article research">
+                        <div class="post-tags">
+                            <span class="post-tag">#Article</span>
+                            <span class="post-tag">#Research</span>
+                        </div>
+                        <h3 class="post-title">The Ethics of AI in Healthcare</h3>
+                        <p class="post-excerpt">
+                            Examining ethical considerations in deploying artificial intelligence systems within medical contexts. 
+                            Balancing innovation with patient rights and medical ethics.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">12 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-tags="personal">
+                        <div class="post-tags">
+                            <span class="post-tag">#Personal</span>
+                        </div>
+                        <h3 class="post-title">Reflections on Accessibility</h3>
+                        <p class="post-excerpt">
+                            Personal observations from working on inclusive technology platforms. Lessons learned from building 
+                            TravAcs and understanding the needs of visually-impaired users.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">6 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-tags="bookreview">
+                        <div class="post-tags">
+                            <span class="post-tag">#BookReview</span>
+                        </div>
+                        <h3 class="post-title">Book Review: The Gene by Siddhartha Mukherjee</h3>
+                        <p class="post-excerpt">
+                            An intimate history of genetics that weaves science with personal narrative. Mukherjee explores the 
+                            biological and social dimensions of heredity and identity.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">10 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-tags="essay personal">
+                        <div class="post-tags">
+                            <span class="post-tag">#Essay</span>
+                            <span class="post-tag">#Personal</span>
+                        </div>
+                        <h3 class="post-title">Leadership Beyond Titles</h3>
+                        <p class="post-excerpt">
+                            What I learned founding Unquote and leading student initiatives at IIIT-Delhi. On building communities, 
+                            finding your voice, and creating spaces for others to thrive.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">7 min read</span>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-tags="article">
+                        <div class="post-tags">
+                            <span class="post-tag">#Article</span>
+                        </div>
+                        <h3 class="post-title">The Future of Computational Biology</h3>
+                        <p class="post-excerpt">
+                            Exploring how computational methods are revolutionizing biological research. From protein structure 
+                            prediction to personalized medicine and beyond.
+                        </p>
+                        <div class="post-meta">
+                            <span class="post-date">Coming Soon</span>
+                            <span class="post-readtime">11 min read</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="coming-soon-notice">
+                    <div class="notice-content">
+                        <h3>More Writing Coming Soon</h3>
+                        <p>I'm currently working on several essays and articles. Subscribe to get notified when new content is published!</p>
+                        <form class="subscribe-form">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Evani Menon. Building at the intersection of technology and society.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const postCards = document.querySelectorAll('.post-card, .featured-post');
+        
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            postCards.forEach(card => {
+                const title = card.querySelector('.post-title, .featured-post-title').textContent.toLowerCase();
+                const excerpt = card.querySelector('.post-excerpt, .featured-post-excerpt').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+        
+        // Tag filtering
+        const tagBtns = document.querySelectorAll('.tag-btn');
+        
+        tagBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tag = btn.dataset.tag;
+                
+                // Update active button
+                tagBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Clear search
+                searchInput.value = '';
+                
+                // Filter posts
+                postCards.forEach(card => {
+                    const tags = card.dataset.tags || '';
+                    
+                    if (tag === 'all' || tags.includes(tag)) {
+                        card.style.display = '';
+                        setTimeout(() => card.classList.add('visible'), 10);
+                    } else {
+                        card.classList.remove('visible');
+                        setTimeout(() => card.style.display = 'none', 300);
+                    }
+                });
+            });
+        });
+        
+        // Subscribe form
+        document.querySelector('.subscribe-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for subscribing! You\'ll be notified when new content is published.');
+            e.target.reset();
+        });
+        
+        // Initial animation
+        setTimeout(() => {
+            postCards.forEach((card, index) => {
+                setTimeout(() => card.classList.add('visible'), index * 100);
+            });
+        }, 100);
+    </script>
+</body>
+</html>

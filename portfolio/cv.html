@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Evani Menon</title>
+    <meta name="description" content="Comprehensive CV of Evani Menon - Computer Science & Biosciences student at IIIT-Delhi">
+    <link rel="icon" type="image/png" href="Images/favicon.png"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Evani Menon</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Portfolio</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="writing.html" class="nav-link">Writing</a>
+                <a href="cv.html" class="nav-link active">CV</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="sun-icon">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="12" y1="2" x2="12" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="12" y1="20" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="4" y1="12" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="22" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="4.93" x2="17.66" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="17.66" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="19.07" x2="17.66" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="6.34" x2="4.93" y2="4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="moon-icon">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cv-page">
+        <!-- <section class="cv-header">
+            <div class="container">
+                <h1 class="page-title">Curriculum Vitae</h1>
+                <p class="page-subtitle">Comprehensive overview of my education, experience, and achievements</p>
+                <button class="btn btn-download" onclick="alert('PDF download will be implemented')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </button>
+            </div>
+        </section> -->
+
+        <section class="cv-header">
+            <div class="container">
+                <h1 class="page-title">Curriculum Vitae</h1>
+                <p class="page-subtitle">Comprehensive overview of my education, experience, and achievements</p>
+                <a href="https://drive.google.com/file/d/1alQIddb_YgJ4aADcJRrHe_vk-GqEaIIb/view?usp=sharing"
+                    class="btn btn-download" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+        </section>
+
+        
+
+        <section class="cv-content">
+            <div class="container cv-container">
+                <!-- Education Section -->
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="education">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Education</h2>
+                            <span class="section-count">1</span>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="education">
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>B.Tech in Computer Science & Biosciences</h3>
+                                    <p class="cv-org">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)</p>
+                                </div>
+                                <span class="cv-date">2024 - 2028</span>
+                            </div>
+                            <div class="cv-details">
+                                <p><strong>Email:</strong> evani24210@iiitd.ac.in</p>
+                                <p><strong>Scholarships:</strong></p>
+                                <ul>
+                                    <li>50% Merit Scholarship - Semester 3 (2024)</li>
+                                    <li>25% Merit Scholarship - 1st Year (2024-2025)</li>
+                                </ul>
+                                <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Management Systems, Computer Organization, Advanced Programming, Introduction to Biosciences</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience Section -->
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="experience">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Work Experience</h2>
+                            <span class="section-count">4</span>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="experience">
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p class="cv-org">TravAcs</p>
+                                </div>
+                                <span class="cv-date">Apr 2025 - Jul 2025</span>
+                            </div>
+                            <div class="cv-details">
+                                <ul>
+                                    <li>Architected an inclusive web platform using Flask, Jinja and HTML/CSS</li>
+                                    <li>Enabled accessible digital travel assistance for 100+ visually-impaired users across Delhi NCR</li>
+                                    <li>Implemented WCAG 2.1 AA compliance standards for accessibility</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Research Assistant</h3>
+                                    <p class="cv-org">Translational Biology Lab, IIIT-Delhi</p>
+                                </div>
+                                <span class="cv-date">Aug 2025 - Sep 2025</span>
+                            </div>
+                            <div class="cv-details">
+                                <ul>
+                                    <li>Conducted literature-driven research on transcriptional adaptation and mRNA decay mechanisms</li>
+                                    <li>Studied molecular basis of mutation severity modulation</li>
+                                    <li>Analyzed research papers and synthesized findings for ongoing projects</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>SWE Intern (AI/ML)</h3>
+                                    <p class="cv-org">Wildlife Institute of India - CaTRAT</p>
+                                </div>
+                                <span class="cv-date">Jul 2024 - Aug 2024</span>
+                            </div>
+                            <div class="cv-details">
+                                <ul>
+                                    <li>Built frontend modules for CaTRAT, an AI-powered camera-trap wildlife image classification system</li>
+                                    <li>Contributed to tiger conservation efforts through technology</li>
+                                    <li>Collaborated with wildlife researchers and ML engineers</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Non-Clinical Hospital Intern</h3>
+                                    <p class="cv-org">Sri Sathya Sai Institute of Higher Medical Sciences (SSSIHMS) - Cardiology</p>
+                                </div>
+                                <span class="cv-date">Jun 2025 - Jul 2025</span>
+                            </div>
+                            <div class="cv-details">
+                                <ul>
+                                    <li>Deployed an automated token-based workflow to improve patient flow management</li>
+                                    <li>Reduced patient wait times through system optimization</li>
+                                    <li>Collaborated with medical staff to understand workflow requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="skills">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Technical Skills</h2>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="skills">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">C</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">HTML/CSS</span>
+                                    <span class="skill-tag">Bash</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks & Tools</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Flask</span>
+                                    <span class="skill-tag">FastAPI</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Cloud Run</span>
+                                    <span class="skill-tag">MySQL</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Bioinformatics & Scientific Computing</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Biopython</span>
+                                    <span class="skill-tag">PyMOL</span>
+                                    <span class="skill-tag">NumPy</span>
+                                    <span class="skill-tag">Pandas</span>
+                                    <span class="skill-tag">PyTorch</span>
+                                    <span class="skill-tag">MATLAB</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Other</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">LaTeX</span>
+                                    <span class="skill-tag">Godot</span>
+                                    <span class="skill-tag">Accessibility (WCAG)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Section -->
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="certifications">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Licenses & Certifications</h2>
+                            <span class="section-count">4</span>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="certifications">
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Data or Specimens Only Research</h3>
+                                    <p class="cv-org">CITI Program</p>
+                                </div>
+                                <span class="cv-date">Jan 2026</span>
+                            </div>
+                            <div class="cv-details">
+                                <p><strong>Credential ID:</strong> 74644625</p>
+                                <p><strong>Expires:</strong> Jan 2029</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Global Outreach Member</h3>
+                                    <p class="cv-org">American Society for Microbiology</p>
+                                </div>
+                                <span class="cv-date">Jun 2025</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Membership certification in global microbiology outreach initiatives</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Industry Engagement and Technology Exposure Program</h3>
+                                    <p class="cv-org">Microsoft</p>
+                                </div>
+                                <span class="cv-date">Mar 2023</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Completed comprehensive program on industry technologies and professional development</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Agnirva Space Internship</h3>
+                                    <p class="cv-org">Agnirva.com Space Community</p>
+                                </div>
+                                <span class="cv-date">Jan 2025</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Certificate of completion for space technology internship program</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Section
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="leadership">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Leadership & Activities</h2>
+                            <span class="section-count">4</span>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="leadership">
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Founder</h3>
+                                    <p class="cv-org">Unquote - Literary & Creative Writing Initiative</p>
+                                </div>
+                                <span class="cv-date">2024 - Present</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Founded and lead a literary and creative writing initiative at IIIT-Delhi, organizing workshops, writing events, and publishing student work</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Operations Lead</h3>
+                                    <p class="cv-org">Innovation and Research Council (IRC), IIIT-Delhi</p>
+                                </div>
+                                <span class="cv-date">2024 - Present</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Coordinate research initiatives and student innovation programs across campus</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Core Member</h3>
+                                    <p class="cv-org">Meraki Art Club, IIIT-Delhi</p>
+                                </div>
+                                <span class="cv-date">2023 - Present</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Organize creative arts events and workshops fostering artistic expression on campus</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Academic Tutor</h3>
+                                    <p class="cv-org">IIIT-Delhi</p>
+                                </div>
+                                <span class="cv-date">2023 - Present</span>
+                            </div>
+                            <div class="cv-details">
+                                <p>Provide peer tutoring in advanced mathematics and computer science courses</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Projects Section -->
+                <div class="cv-section">
+                    <button class="cv-section-header" data-section="projects">
+                        <div class="section-title-group">
+                            <h2 class="section-title">Featured Projects</h2>
+                            <span class="section-count">3</span>
+                        </div>
+                        <svg class="section-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="cv-section-content" id="projects">
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Google Classroom File Downloader</h3>
+                                    <div class="project-meta">
+                                        <span class="project-stat">★ 21 Stars</span>
+                                        <span class="project-stat">2,000+ Users</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cv-details">
+                                <p>Production-grade OAuth-verified FastAPI web app. Streamlines file management for academic resources with secure authentication and scalable cloud infrastructure.</p>
+                                <p><strong>Tech Stack:</strong> Python, FastAPI, OAuth, Cloud Run, Docker</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>Secondary Protein Structure Predictor</h3>
+                                </div>
+                            </div>
+                            <div class="cv-details">
+                                <p>Python implementation of the Chou–Fasman algorithm to predict α-helices and β-strands from amino acid sequences, including nucleation, extension, and conflict resolution.</p>
+                                <p><strong>Tech Stack:</strong> Python, Biopython, PyMOL</p>
+                            </div>
+                        </div>
+
+                        <div class="cv-item">
+                            <div class="cv-item-header">
+                                <div>
+                                    <h3>IIITD Academic ERP</h3>
+                                    <div class="project-meta">
+                                        <span class="project-stat">★ 1 Star</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cv-details">
+                                <p>Java Swing + MySQL University ERP for students, instructors, and admins. CSE201 Final Project implementing comprehensive academic management system.</p>
+                                <p><strong>Tech Stack:</strong> Java, MySQL, Swing</p>
+                            </div>
+                        </div>
+
+                        <p class="view-more-link">
+                            <a href="projects.html">View all 14+ projects →</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Evani Menon. Building at the intersection of technology and society.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Expandable sections
+        const sectionHeaders = document.querySelectorAll('.cv-section-header');
+        
+        sectionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const section = header.closest('.cv-section');
+                section.classList.toggle('expanded');
+            });
+        });
+        
+        // Expand all sections by default
+        document.querySelectorAll('.cv-section').forEach(section => {
+            section.classList.add('expanded');
+        });
+    </script>
+</body>
+</html>

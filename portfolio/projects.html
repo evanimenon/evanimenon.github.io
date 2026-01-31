@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Evani Menon</title>
+    <meta name="description" content="Explore Evani Menon's projects in computer science, bioinformatics, and software engineering">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Evani Menon</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Portfolio</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="writing.html" class="nav-link">Writing</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="sun-icon">
+                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="12" y1="2" x2="12" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="12" y1="20" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="4" y1="12" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="22" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="4.93" x2="17.66" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="17.66" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="19.07" y1="19.07" x2="17.66" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="6.34" y1="6.34" x2="4.93" y2="4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="moon-icon">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="projects-page">
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="page-title">Projects</h1>
+                <p class="page-subtitle">A comprehensive collection of my work in computer science, bioinformatics, and software engineering</p>
+                
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="bio">Bioinformatics</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                    <button class="filter-btn" data-filter="tools">Tools & Utilities</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="container">
+                <!-- Featured Project -->
+                <div class="featured-project" data-category="web tools">
+                    <div class="featured-badge">★ Featured</div>
+                    <div class="featured-content">
+                        <h2 class="featured-title">Google Classroom File Downloader</h2>
+                        <p class="featured-description">
+                            Production-grade OAuth-verified FastAPI web app serving 2,000+ students. Streamlines file management 
+                            for academic resources with secure authentication and scalable cloud infrastructure.
+                        </p>
+                        <div class="featured-stats">
+                            <div class="stat">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z" />
+                                </svg>
+                                <span>21 Stars</span>
+                            </div>
+                            <div class="stat">
+                                <span>2,000+ Users</span>
+                            </div>
+                            <div class="stat">
+                                <span>MIT License</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">OAuth</span>
+                            <span class="tech-tag">Cloud Run</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/google-classroom-downloader" target="_blank" class="project-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Grid -->
+                <div class="projects-grid">
+                    <!-- Web Development Projects -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-header">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <div class="project-category">Web Development</div>
+                        </div>
+                        <p class="project-description">My personal portfolio showcasing projects and experience</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://evanimenon.github.io" target="_blank" class="project-link-small">Live Site</a>
+                            <a href="https://github.com/evanimenon/evanimenon.github.io" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web academic">
+                        <div class="project-header">
+                            <h3 class="project-title">IIITD Academic ERP</h3>
+                            <div class="project-stats">
+                                <span>★ 1</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Java Swing + MySQL University ERP for students, instructors, and admins. CSE201 Final Project.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Swing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/IIITD-Academic-ERP" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Bioinformatics Projects -->
+                    <article class="project-card" data-category="bio">
+                        <div class="project-header">
+                            <h3 class="project-title">Secondary Structure Predictor</h3>
+                        </div>
+                        <p class="project-description">Python implementation of the Chou–Fasman algorithm to predict α-helices and β-strands from amino acid sequences.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Biopython</span>
+                            <span class="tech-tag">PyMOL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/secondary-structure-predictor" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="bio">
+                        <div class="project-header">
+                            <h3 class="project-title">Biosignature Spectroscopy Pipeline</h3>
+                        </div>
+                        <p class="project-description">Python-based pipeline for pre-processing and classification of Raman and VNIR spectra for agnostic biosignature detection.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/biosignature-spectroscopy-pipeline" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="bio">
+                        <div class="project-header">
+                            <h3 class="project-title">Visual Cortex Encoding Model</h3>
+                        </div>
+                        <p class="project-description">Model for understanding neural responses in the visual cortex</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Neuroscience</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/visual-cortex-encoding-model" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Academic Projects -->
+                    <article class="project-card" data-category="academic">
+                        <div class="project-header">
+                            <h3 class="project-title">IIITD Resources Archive</h3>
+                            <div class="project-stats">
+                                <span>★ 7</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Complete archive of B.Tech (2024-2028) lecture slides, notes, assignments, labs, and study material</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/iiitd-resources" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academic">
+                        <div class="project-header">
+                            <h3 class="project-title">RISC-V Assembler & Simulator</h3>
+                        </div>
+                        <p class="project-description">Implementation of a RISC-V RV32I assembler and execution simulator with label resolution, branching, stack memory, and trace logging. CSE112 Final Project.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Computer Architecture</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/riscv-assembler-simulator" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academic">
+                        <div class="project-header">
+                            <h3 class="project-title">Multimodal Fleet Manager</h3>
+                        </div>
+                        <p class="project-description">CSE201 (Advanced Programming) Assignment implementing a fleet management system</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/multimodal-fleet-manager" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academic tools">
+                        <div class="project-header">
+                            <h3 class="project-title">Whiteboard App</h3>
+                            <div class="project-stats">
+                                <span>★ 1</span>
+                            </div>
+                        </div>
+                        <p class="project-description">CSE101 (Introduction to Programming) Bonus Project - interactive whiteboard application</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tkinter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/whiteboard-app" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="academic">
+                        <div class="project-header">
+                            <h3 class="project-title">Student Database Management System</h3>
+                        </div>
+                        <p class="project-description">Grade 12 CBSE Final Project implementing a complete student management system</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/student-database-management-system" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                    <!-- Tools & Utilities -->
+                    <!-- <article class="project-card" data-category="tools">
+                        <div class="project-header">
+                            <h3 class="project-title">Competitive Programming Solutions</h3>
+                            <div class="project-stats">
+                                <span>★ 2</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Collection of competitive programming solutions and algorithms</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Data Structures</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/Competitive-Programming" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article> -->
+
+                    <article class="project-card" data-category="web tools">
+                        <div class="project-header">
+                            <h3 class="project-title">Wildlife Web App</h3>
+                            <!-- <div class="project-badge">Fork</div> -->
+                        </div>
+                        <p class="project-description">Contribution to CaTRaT</p>
+                        <div class="tech-stack">                            
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/evanimenon/Wildlife_webapp" target="_blank" class="project-link-small">GitHub</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Evani Menon. Building at the intersection of technology and society.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Project filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('[data-category]');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = '';
+                        setTimeout(() => card.classList.add('visible'), 10);
+                    } else {
+                        const categories = card.dataset.category.split(' ');
+                        if (categories.includes(filter)) {
+                            card.style.display = '';
+                            setTimeout(() => card.classList.add('visible'), 10);
+                        } else {
+                            card.classList.remove('visible');
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Initial animation
+        setTimeout(() => {
+            projectCards.forEach((card, index) => {
+                setTimeout(() => card.classList.add('visible'), index * 50);
+            });
+        }, 100);
+    </script>
+</body>
+</html>

@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Evani Menon - Computer Science & Biosciences student at IIIT-Delhi. Building at the intersection of healthcare, accessibility, and software.">
-    <title>Evani Menon - Portfolio</title>
+    <title>Evani Menon - Computer Science & Biosciences Student | IIIT-Delhi</title>
+    <meta name="keywords" content="Evani Menon, IIIT-Delhi, Computer Science, Biosciences, Software Engineer, Bioinformatics, Portfolio">
+    <meta property="og:title" content="Evani Menon - Portfolio">
+    <meta property="og:description" content="Computer Science & Biosciences student at IIIT-Delhi. Building at the intersection of healthcare, accessibility, and software.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,58 +189,39 @@
         <section class="timeline" id="timeline">
             <div class="section-header">
                 <h2 class="section-title">Journey</h2>
-                <p class="section-subtitle">Every win, every lesson, every milestone</p>
+                <div class="timeline-controls">
+                    <button class="timeline-jump" onclick="document.querySelector('.timeline-container').scrollIntoView({behavior: 'smooth', block: 'end'})">Jump to Bottom ↓</button>
+                </div>
             </div>
             <div class="timeline-container">
                 <div class="timeline-line"></div>
-                
-                <div class="timeline-item" data-category="achievement">
-                    <div class="timeline-marker"></div>
+
+                <div class="timeline-item minor" data-category="achievement">
+                    <div class="timeline-marker achievement"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3 class="timeline-title">50% Merit Scholarship</h3>
-                        <p class="timeline-description">Awarded 50% scholarship for Semester 3 at IIIT-Delhi for overall academic standing.</p>
+                        <span class="timeline-date">JAN 2026</span>
+                        <p class="timeline-minor-text">
+                            Scholarship increased to 50% for my 3rd Semester at IIIT-Delhi!</p>
                         <span class="timeline-category">Academic Achievement</span>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-category="work">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-item major" data-category="leadership">
+                    <div class="timeline-marker leadership"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Apr 2025 - Jul 2025</span>
-                        <h3 class="timeline-title">Software Engineer at TravAcs</h3>
-                        <p class="timeline-description">
-                            Architected an inclusive web platform using Flask, Jinja and HTML/CSS. 
-                            Enabled accessible digital travel assistance for 100+ visually-impaired users across Delhi NCR.
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-category="achievement">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024</span>
-                        <h3 class="timeline-title">25% Merit Scholarship</h3>
-                        <p class="timeline-description">Awarded 25% scholarship for 1st year at IIIT-Delhi for overall academic standing.</p>
-                        <span class="timeline-category">Academic Achievement</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-category="leadership">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3 class="timeline-title">Founder of Unquote</h3>
+                        <span class="timeline-date">AUG 2025</span>
+                        <h3 class="timeline-title">Founder of Unquote, IIITD</h3>
                         <p class="timeline-description">
                             Founded and lead a literary and creative writing initiative at IIIT-Delhi.
+                            Founded and led an official diversity and inclusion club at IIIT-Delhi, focusing on uplifting marginalized groups 
+                            through student-led discussions and activism.
                         </p>
                         <span class="timeline-category">Leadership</span>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-category="work">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-item major" data-category="work">
+                    <div class="timeline-marker work"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">Aug 2025 - Sep 2025</span>
                         <h3 class="timeline-title">Research Assistant at Translational Biology Lab, IIIT Delhi</h3>
@@ -247,145 +233,159 @@
                     </div>
                 </div>
 
-                <div class="timeline-item" data-category="work">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-item major" data-category="leadership">
+                    <div class="timeline-marker leadership"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jul 2024 - Aug 2024</span>
+                        <span class="timeline-date">JUN 2025</span>
+                        <p class="timeline-minor-text">
+                            Became the Head of International Outreach at IRC, IIITD. I conducted orientation sessions
+                            for incoming international students.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item major" data-category="work">
+                    <div class="timeline-marker work"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">JUN 2025 - JUL 2025</span>
+                        <h3 class="timeline-title">Non-Clinical Hospital Intern at Sri Sathya Sai Super Specialty Hospital</h3>
+                        <p class="timeline-description">
+                            Volunteered within the Cardiology Department, balancing writing code with the actual heavy lifting of moving patients and managing the floor. 
+                            It was a high-pressure environment that gave me a real look at the behind-the-scenes of hospital management and a chance to help out patients who really needed it.
+                        </p>
+                        <span class="timeline-category">Work Experience</span>
+
+                    </div>
+                </div>
+
+                <div class="timeline-item major" data-category="work">
+                    <div class="timeline-marker work"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Apr 2025 - JUL 2025</span>
+                        <h3 class="timeline-title">Software Engineer at TravAcs</h3>
+                        <p class="timeline-description">
+                            Created the official web platform for Travacs, an organization that focuses on improving digital accessibility
+                            and enabling inclusive travel experiences for the visually impaired community across Delhi NCR. 
+                            I worked directly with founders and members of the VI community to make sure the site actually worked for their needs.
+                        </p>
+                        <span class="timeline-category">Work Experience</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item minor" data-category="achievement">
+                    <div class="timeline-marker achievement"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2025</span>
+                        <p class="timeline-minor-text">Completed Agnirva Space Internship</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item minor" data-category="achievement">
+                    <div class="timeline-marker achievement"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">AUG 2024</span>
+                        <p class="timeline-minor-text">
+                            Started my B.Tech in Computer Science and Biosciences at IIIT-Delhi. 
+                            Awarded 25% scholarship for my 1st year at IIIT-Delhi for overall academic standing</p>
+                    </div>
+                    <span class="timeline-category">Academic Achievement</span>
+                </div>
+
+                <div class="timeline-item major" data-category="work">
+                    <div class="timeline-marker work"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">JUL 2024 - AUG 2024</span>
                         <h3 class="timeline-title">SWE Intern (AI/ML) at Wildlife Institute of India</h3>
                         <p class="timeline-description">
                             Built frontend modules for CaTRAT, an AI-powered camera-trap wildlife image classification system 
-                            used for tiger conservation.
+                            used for tiger conservation, working under Prof. Saket Anand. This was my first time coding for a cause! 
                         </p>
                         <span class="timeline-category">Work Experience</span>
                     </div>
                 </div>
 
-                <div class="timeline-item" data-category="work">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-item minor" data-category="leadership">
+                    <div class="timeline-marker leadership"></div>
                     <div class="timeline-content">
-                        <span class="timeline-date">Jun 2025 - Jul 2025</span>
-                        <h3 class="timeline-title">Non-Clinical Hospital Intern at SSSIHMS</h3>
-                        <p class="timeline-description">
-                            Deployed an automated token-based workflow to improve patient flow management 
-                            within the Cardiology Department.
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
+                        <span class="timeline-date">JUN 2023</span>
+                        <p class="timeline-minor-text"> Started as a tutor for 8th-10th graders in Math and Computer Science within my community</p>
                     </div>
                 </div>
+                
 
-                <div class="timeline-item" data-category="leadership">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024 - Present</span>
-                        <h3 class="timeline-title">Operations Lead at IRC</h3>
-                        <p class="timeline-description">
-                            Coordinate research initiatives and student innovation programs across campus 
-                            at the Innovation and Research Council.
-                        </p>
-                        <span class="timeline-category">Leadership</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-category="leadership">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - Present</span>
-                        <h3 class="timeline-title">Core Member at Meraki Art Club</h3>
-                        <p class="timeline-description">
-                            Organize creative arts events and workshops fostering artistic expression.
-                        </p>
-                        <span class="timeline-category">Leadership</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-category="leadership">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023 - Present</span>
-                        <h3 class="timeline-title">Academic Tutor</h3>
-                        <p class="timeline-description">
-                            Provide peer tutoring in advanced mathematics and computer science courses.
-                        </p>
-                        <span class="timeline-category">Leadership</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-category="achievement">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2024</span>
-                        <h3 class="timeline-title">Started B.Tech at IIIT-Delhi</h3>
-                        <p class="timeline-description">
-                            Pursuing Computer Science and Biosciences, building at the intersection of 
-                            technology and biology.
-                        </p>
-                        <span class="timeline-category">Education</span>
-                    </div>
-                </div>
+            </div>
+            <div class="timeline-footer">
+                <button class="timeline-jump" onclick="document.querySelector('.timeline').scrollIntoView({behavior: 'smooth'})">Back to Top ↑</button>
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2 class="section-title">Let's Connect</h2>
-                    <p class="contact-description">
-                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M3 4h14c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M19 6l-9 5-9-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <a href="mailto:evani24210@iiitd.ac.in">evani24210@iiitd.ac.in</a>
-                        </div>
-                        <div class="contact-detail">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/>
-                            </svg>
-                            <span>New Delhi / Bangalore, India</span>
-                        </div>
+            <div class="contact-wrapper">
+                <div class="contact-left">
+                    <div class="contact-info-box">
+                        <div class="green-accent-box"></div>
+                        <h2 class="contact-title">Get in Touch</h2>
+                        <p class="contact-intro">
+                            Send me any message and I'll try to get back to you whenever I can!
+                        </p>
+                        <p class="contact-note">
+                            I need your <strong>Name</strong> and <strong>Email Address</strong>, but 
+                            you won't receive anything other than your reply.
+                        </p>
                     </div>
-                    <div class="contact-social">
-                        <a href="https://github.com/evanimenon" target="_blank" class="contact-social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="https://linkedin.com/in/evanimenon" target="_blank" class="contact-social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com/evanimenon" target="_blank" class="contact-social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
+                    
+                    <div class="contact-social-section">
+                        <div class="social-info">
+                            <p class="social-prompt">Write me on my social networks</p>
+                            <div class="social-icons">
+                                <a href="https://instagram.com/evanimenon" target="_blank" class="social-icon" aria-label="Instagram">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com/in/evanimenon" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/evanimenon" target="_blank" class="social-icon" aria-label="GitHub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="user_name" required>
+                
+                <div class="contact-right">
+                    <div class="contact-form-wrapper">
+                        <h3 class="form-title">Send Me A Message</h3>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="user_name" required placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="user_email" required placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="user_subject" required placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="user_message" rows="5" required placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-send">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Send Message
+                            </button>
+                            <p class="form-message" id="form-message"></p>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="user_email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="user_subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="user_message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <p class="form-message" id="form-message"></p>
-                </form>
+                </div>
             </div>
         </section>
     </main>
