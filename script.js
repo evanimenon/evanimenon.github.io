@@ -1,7 +1,9 @@
 (function() {
     'use strict';
 
-    emailjs.init("FKlcLUbZedV_wNlJU");
+    if (typeof emailjs !== 'undefined') {
+        emailjs.init("FKlcLUbZedV_wNlJU");
+    }
 
     const themeToggle = document.getElementById('theme-toggle');
     const nav = document.getElementById('nav');

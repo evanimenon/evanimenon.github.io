@@ -1460,6 +1460,21 @@ section {
     margin-bottom: 4rem;
 }
 
+.featured-post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.featured-post-link .featured-post {
+    cursor: pointer;
+}
+
+.featured-post-link:hover .featured-post {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px var(--shadow);
+}
+
 .featured-post {
     position: relative;
     background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-secondary) 100%);
@@ -1879,6 +1894,210 @@ section {
     
     .section-title {
         font-size: 1.25rem;
+    }
+}
+
+/* Article Page */
+.article-page {
+    min-height: 100vh;
+}
+
+.article-hero {
+    padding: 7rem 2rem 3rem;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.article-hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.article-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: gap var(--transition-speed) var(--transition-smooth);
+}
+
+.article-back:hover {
+    gap: 0.75rem;
+}
+
+.article-tag-row {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.article-tag {
+    padding: 0.3rem 0.85rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    border-radius: 14px;
+    font-size: 0.775rem;
+    font-weight: 600;
+}
+
+.article-title {
+    font-family: var(--font-display);
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+}
+
+.article-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.article-body {
+    padding: 3.5rem 2rem 5rem;
+}
+
+.article-body-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.article-body p {
+    color: var(--text-secondary);
+    font-size: 1.075rem;
+    line-height: 1.9;
+    margin-bottom: 1.75rem;
+}
+
+.article-body blockquote {
+    border-left: 3px solid var(--accent);
+    margin: 2.25rem 0;
+    padding: 0.25rem 0 0.25rem 1.75rem;
+    background: var(--accent-light);
+    border-radius: 0 10px 10px 0;
+}
+
+.article-body blockquote p {
+    color: var(--text-primary);
+    font-style: italic;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+
+.article-body blockquote .quote-attr {
+    display: block;
+    margin-top: 0.6rem;
+    font-style: normal;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.article-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2rem 0 0.6rem;
+    background: var(--accent-light);
+    border: 1px solid var(--border);
+}
+
+.article-image img {
+    width: 100%;
+    display: block;
+}
+
+.article-image-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    gap: 0.6rem;
+}
+
+.article-image-placeholder svg {
+    opacity: 0.5;
+}
+
+.article-caption {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.article-footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 0 0;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-footer-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: gap var(--transition-speed) var(--transition-smooth);
+}
+
+.article-footer-back:hover {
+    gap: 0.75rem;
+}
+
+.article-footer-author {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+.article-footer-author strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+}
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-hero {
+        padding: 6rem 1.5rem 2.5rem;
+    }
+
+    .article-body {
+        padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .article-footer {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .article-footer-author {
+        text-align: left;
     }
 }
 
