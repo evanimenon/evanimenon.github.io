@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">Evani Menon</a>
             <div class="nav-links">
@@ -20,23 +20,16 @@
                 <a href="projects.html" class="nav-link">Projects</a>
                 <a href="writing.html" class="nav-link">Writing</a>
                 <a href="cv.html" class="nav-link active">CV</a>
-                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="sun-icon">
-                        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
-                        <line x1="12" y1="2" x2="12" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="12" y1="20" x2="12" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="4" y1="12" x2="2" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="22" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="19.07" y1="4.93" x2="17.66" y2="6.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="6.34" y1="17.66" x2="4.93" y2="19.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="19.07" y1="19.07" x2="17.66" y2="17.66" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="6.34" y1="6.34" x2="4.93" y2="4.93" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="moon-icon">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
             </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C6 3 6 6.5 8 8.5C10 10.5 13.5 10.5 15.5 9C16.5 9.5 17 10 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -97,13 +90,13 @@
                                 <span class="cv-date">2024 - 2028</span>
                             </div>
                             <div class="cv-details">
-                                <p><strong>Email:</strong> evani24210@iiitd.ac.in</p>
+                                <!-- <p><strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d382b3c33346f696f6c6d1d3434342939733c3e733433">[email&#160;protected]</a></p> -->
                                 <p><strong>Scholarships:</strong></p>
                                 <ul>
                                     <li>50% Merit Scholarship - Semester 3 (2024)</li>
                                     <li>25% Merit Scholarship - 1st Year (2024-2025)</li>
                                 </ul>
-                                <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Management Systems, Computer Organization, Advanced Programming, Introduction to Biosciences</p>
+                                <p><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Database Management Systems, Computer Organization, Advanced Programming, BioPhysics, Foundations of Biomedical Informatics</p>
                             </div>
                         </div>
                     </div>
@@ -418,7 +411,7 @@
                                 </div>
                             </div>
                             <div class="cv-details">
-                                <p>Python implementation of the Chou–Fasman algorithm to predict α-helices and β-strands from amino acid sequences, including nucleation, extension, and conflict resolution.</p>
+                                <p>Python implementation of the Chou–Fasman algorithm 
                                 <p><strong>Tech Stack:</strong> Python, Biopython, PyMOL</p>
                             </div>
                         </div>
