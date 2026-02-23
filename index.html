@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav class="nav" id="nav">
@@ -38,6 +39,7 @@
     </nav>
 
     <main>
+        <!-- ═══════════════════════════════ HERO ════════════════════════════════ -->
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="hero-text">
@@ -72,7 +74,7 @@
                         </a>
                         <a href="https://linkedin.com/in/evanimenon" target="_blank" class="social-link" aria-label="LinkedIn">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M18.5 0h-17C.675 0 0 .675 0 1.5v17c0 .825.675 1.5 1.5 1.5h17c.825 0 1.5-.675 1.5-1.5v-17c0-.825-.675-1.5-1.5-1.5zM6 17H3V7h3v10zM4.5 5.817c-.967 0-1.75-.783-1.75-1.75s.783-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zM17 17h-3v-4.892c0-1.167-.025-2.667-1.625-2.667-1.625 0-1.875 1.267-1.875 2.575V17h-3V7h2.883v1.367h.042c.4-.758 1.383-1.558 2.85-1.558 3.05 0 3.608 2.008 3.608 4.617V17h.117z"/>
+                                <path d="M18.5 0h-17C.675 0 .675 0 0 1.5v17c0 .825.675 1.5 1.5 1.5h17c.825 0 1.5-.675 1.5-1.5v-17c0-.825-.675-1.5-1.5-1.5zM6 17H3V7h3v10zM4.5 5.817c-.967 0-1.75-.783-1.75-1.75s.783-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zM17 17h-3v-4.892c0-3.368-4-3.113-4 0V17h-3V7h2.883v1.367h.042c.4-.758 1.383-1.558 2.85-1.558 3.05 0 3.608 2.008 3.608 4.617V17H17z"/>
                             </svg>
                         </a>
                         <a href="https://instagram.com/evanimenon" target="_blank" class="social-link" aria-label="Instagram">
@@ -102,6 +104,7 @@
             </div>
         </section>
 
+        <!-- ═══════════════════════════ FEATURED PROJECTS ════════════════════════ -->
         <section class="featured-projects" id="projects">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
@@ -186,139 +189,98 @@
             </div>
         </section>
 
+        <!-- ══════════════════════ JOURNEY — CALENDAR FLIPBOOK ═══════════════════ -->
         <section class="timeline" id="timeline">
             <div class="section-header">
                 <h2 class="section-title">Journey</h2>
-                <div class="timeline-controls">
-                    <button class="timeline-jump" onclick="document.querySelector('.timeline-container').scrollIntoView({behavior: 'smooth', block: 'end'})">Jump to Bottom ↓</button>
-                </div>
             </div>
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
 
-                <div class="timeline-item minor" data-category="achievement">
-                    <div class="timeline-marker achievement"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">JAN 2026</span>
-                        <p class="timeline-minor-text">
-                            Scholarship increased to 50% for my 3rd Semester at IIIT-Delhi!</p>
-                        <span class="timeline-category">Academic Achievement</span>
+            <div class="flipbook-wrap">
+                <!-- LEFT: Calendar panel -->
+                <div class="cal-panel" role="region" aria-label="Journey calendar">
+                    <div class="cal-header">
+                        <button class="cal-nav-btn" id="cal-prev" aria-label="Previous month">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M10 3L5 8l5 5"/>
+                            </svg>
+                        </button>
+                        <div class="cal-month-year">
+                            <button class="cal-month-btn" id="cal-month-trigger" aria-haspopup="dialog"></button>
+                            <button class="cal-year-btn" id="cal-year-trigger" aria-haspopup="dialog"></button>
+                        </div>
+                        <button class="cal-nav-btn" id="cal-next" aria-label="Next month">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                <path d="M6 3l5 5-5 5"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="cal-grid-viewport" id="cal-viewport">
+                        <!-- JS renders grid here -->
+                    </div>
+
+                    <div class="cal-legend" role="list" aria-label="Event type legend">
+                        <div class="legend-item" role="listitem">
+                            <div class="legend-swatch swatch-work" aria-hidden="true"></div>
+                            <span>Work</span>
+                        </div>
+                        <div class="legend-item" role="listitem">
+                            <div class="legend-swatch swatch-academic" aria-hidden="true"></div>
+                            <span>Academic</span>
+                        </div>
+                        <div class="legend-item" role="listitem">
+                            <div class="legend-swatch swatch-leadership" aria-hidden="true"></div>
+                            <span>Leadership</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="timeline-item major" data-category="leadership">
-                    <div class="timeline-marker leadership"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">AUG 2025</span>
-                        <h3 class="timeline-title">Founder of Unquote, IIITD</h3>
-                        <p class="timeline-description">
-                            Founded and lead a literary and creative writing initiative at IIIT-Delhi.
-                            Founded and led an official diversity and inclusion club at IIIT-Delhi, focusing on uplifting marginalized groups 
-                            through student-led discussions and activism.
-                        </p>
-                        <span class="timeline-category">Leadership</span>
+                <!-- RIGHT: Detail panel (desktop) -->
+                <div class="detail-panel" id="detail-panel" role="region" aria-live="polite" aria-label="Event details">
+                    <div class="detail-empty">
+                        <div class="detail-empty-icon" aria-hidden="true">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="18" rx="3"/>
+                                <path d="M16 2v4M8 2v4M3 10h18"/>
+                            </svg>
+                        </div>
+                        <p>Select a highlighted date to view event details</p>
                     </div>
                 </div>
-
-                <div class="timeline-item major" data-category="work">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Aug 2025 - Sep 2025</span>
-                        <h3 class="timeline-title">Research Assistant at Translational Biology Lab, IIIT Delhi</h3>
-                        <p class="timeline-description">
-                            Conducted literature-driven research on transcriptional adaptation, mRNA decay mechanisms, 
-                            and studied molecular basis of mutation severity modulation.
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item major" data-category="leadership">
-                    <div class="timeline-marker leadership"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">JUN 2025</span>
-                        <p class="timeline-minor-text">
-                            Became the Head of International Outreach at IRC, IIITD. I conducted orientation sessions
-                            for incoming international students.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item major" data-category="work">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">JUN 2025 - JUL 2025</span>
-                        <h3 class="timeline-title">Non-Clinical Hospital Intern at Sri Sathya Sai Super Specialty Hospital</h3>
-                        <p class="timeline-description">
-                            Volunteered within the Cardiology Department, balancing writing code with the actual heavy lifting of moving patients and managing the floor. 
-                            It was a high-pressure environment that gave me a real look at the behind-the-scenes of hospital management and a chance to help out patients who really needed it.
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
-
-                    </div>
-                </div>
-
-                <div class="timeline-item major" data-category="work">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Apr 2025 - JUL 2025</span>
-                        <h3 class="timeline-title">Software Engineer at TravAcs</h3>
-                        <p class="timeline-description">
-                            Created the official web platform for Travacs, an organization that focuses on improving digital accessibility
-                            and enabling inclusive travel experiences for the visually impaired community across Delhi NCR. 
-                            I worked directly with founders and members of the VI community to make sure the site actually worked for their needs.
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item minor" data-category="achievement">
-                    <div class="timeline-marker achievement"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jan 2025</span>
-                        <p class="timeline-minor-text">Completed Agnirva Space Internship</p>
-                    </div>
-                </div>
-
-                <div class="timeline-item minor" data-category="achievement">
-                    <div class="timeline-marker achievement"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">AUG 2024</span>
-                        <p class="timeline-minor-text">
-                            Started my B.Tech in Computer Science and Biosciences at IIIT-Delhi. 
-                            Awarded 25% scholarship for my 1st year at IIIT-Delhi for overall academic standing</p>
-                    </div>
-                    <span class="timeline-category">Academic Achievement</span>
-                </div>
-
-                <div class="timeline-item major" data-category="work">
-                    <div class="timeline-marker work"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">JUL 2024 - AUG 2024</span>
-                        <h3 class="timeline-title">SWE Intern (AI/ML) at Wildlife Institute of India</h3>
-                        <p class="timeline-description">
-                            Built frontend modules for CaTRAT, an AI-powered camera-trap wildlife image classification system 
-                            used for tiger conservation, working under Prof. Saket Anand. This was my first time coding for a cause! 
-                        </p>
-                        <span class="timeline-category">Work Experience</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item minor" data-category="leadership">
-                    <div class="timeline-marker leadership"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">JUN 2023</span>
-                        <p class="timeline-minor-text"> Started as a tutor for 8th-10th graders in Math and Computer Science within my community</p>
-                    </div>
-                </div>
-                
-
-            </div>
-            <div class="timeline-footer">
-                <button class="timeline-jump" onclick="document.querySelector('.timeline').scrollIntoView({behavior: 'smooth'})">Back to Top ↑</button>
             </div>
         </section>
 
+        <!-- Jump Picker modal -->
+        <div class="jump-picker-overlay hidden" id="jump-picker" role="dialog" aria-modal="true" aria-label="Jump to month">
+            <div class="jump-picker-modal">
+                <div class="jp-header">
+                    <button class="jp-year-nav" id="jp-prev-year" aria-label="Previous year">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <path d="M10 3L5 8l5 5"/>
+                        </svg>
+                    </button>
+                    <span class="jp-year-label" id="jp-year-label"></span>
+                    <button class="jp-year-nav" id="jp-next-year" aria-label="Next year">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                            <path d="M6 3l5 5-5 5"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="jp-months-grid" id="jp-months-grid" role="list"></div>
+                <button class="jp-close" id="jp-close">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Mobile bottom sheet -->
+        <div class="sheet-backdrop" id="sheet-backdrop"></div>
+        <div class="mobile-sheet" id="mobile-sheet" role="dialog" aria-modal="true" aria-label="Event details">
+            <div class="sheet-handle-wrap">
+                <div class="sheet-handle" aria-hidden="true"></div>
+            </div>
+            <div class="sheet-body" id="sheet-body"></div>
+        </div>
+
+        <!-- ════════════════════════════ CONTACT ════════════════════════════════ -->
         <section class="contact" id="contact">
             <div class="contact-wrapper">
                 <div class="contact-left">
@@ -332,13 +294,10 @@
                             I need your <strong>Name</strong> and <strong>Email Address</strong>, but 
                             you won't receive anything other than your reply.<br><br>
                         </p>
-
                         <p class="contact-note">
                             <strong>I'm currently exploring internship opportunities for Summer 2026.</strong>
-                            If you think I'd be a good fit for your team, let’s chat.
+                            If you think I'd be a good fit for your team, let's chat.
                         </p>
-
-                        
                     </div>
                     
                     <div class="contact-social-section">
@@ -399,7 +358,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Evani Menon. Building at the intersection of technology and society.</p>
+            <p>&copy; 2026 Evani Menon. Building at the intersection of technology and society.</p>
             <div class="footer-links">
                 <a href="#home">Portfolio</a>
                 <a href="projects.html">Projects</a>
@@ -411,5 +370,7 @@
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
+
+<script src="calendar.js"></script>
 </body>
 </html>
