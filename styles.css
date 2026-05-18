@@ -261,9 +261,9 @@ p + p { margin-top: 0.65rem; }
 }
 
 .hero-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
   object-fit: cover;
   border: 1px solid var(--border);
   flex-shrink: 0;
@@ -871,7 +871,7 @@ p + p { margin-top: 0.65rem; }
   .nav-container { padding: 0 1.25rem; }
 
   .hero-grid { flex-direction: column-reverse; gap: 1.25rem; }
-  .hero-photo { width: 80px; height: 80px; }
+  .hero-photo { width: 80px; height: 80px; border-radius: 8px; }
 
   .tl-group { grid-template-columns: 60px 1fr; gap: 0 1rem; }
   .tl-items { padding-left: 1rem; }
