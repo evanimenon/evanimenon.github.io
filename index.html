@@ -9,11 +9,10 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Evani Menon</a>
@@ -38,174 +37,104 @@
   <main>
     <div class="page-wrap">
 
-      <!-- HERO -->
-      <section style="padding-bottom: 3.5rem; border-bottom: 1px solid var(--border);">
-        <p style="font-size:0.8rem; color:var(--muted); letter-spacing:0.06em; text-transform:uppercase; margin-bottom:1rem;">New Delhi / Bangalore · US Citizen</p>
-        <h1 class="page-title">Evani Menon</h1>
-        <p style="font-size:1.0625rem; color:var(--muted); line-height:1.75; max-width:520px; margin-top:0.75rem; margin-bottom:1.75rem;">
-          B.Tech in Computer Science &amp; Biosciences at IIIT-Delhi. 
-          Building at the intersection of healthcare, accessibility, and software.
-          Interested in medical imaging, biomedical AI, and computational biology.
-        </p>
-
-        <div class="social-row" style="margin-bottom:1.5rem;">
-          <a href="mailto:evani24210@iiitd.ac.in">
-            <svg width="15" height="15" viewBox="0 0 20 20" fill="none"><path d="M3 4h14c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><path d="M19 6l-9 5-9-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            Email
-          </a>
-          <a href="https://github.com/evanimenon" target="_blank">
-            <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/></svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/evanimenon" target="_blank">
-            <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M18.5 0h-17C.675 0 0 .675 0 1.5v17C0 19.325.675 20 1.5 20h17c.825 0 1.5-.675 1.5-1.5v-17c0-.825-.675-1.5-1.5-1.5zM6 17H3V7h3v10zM4.5 5.817c-.967 0-1.75-.783-1.75-1.75s.783-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zM17 17h-3v-4.892c0-3.368-4-3.113-4 0V17h-3V7h2.883v1.367h.042c.4-.758 1.383-1.558 2.85-1.558 3.05 0 3.608 2.008 3.608 4.617V17H17z"/></svg>
-            LinkedIn
-          </a>
-          <a href="cv.html">CV</a>
-        </div>
-
-        <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-          <span class="tag">IIIT-Delhi</span>
-          <span class="tag">CSB '28</span>
-          <span class="tag">US Citizen</span>
-          <span class="tag">Medical Imaging</span>
-          <span class="tag">Bioinformatics</span>
+      <section class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="page-title">Evani Menon</h1>
+            <p class="hero-bio">
+              B.Tech in Computer Science &amp; Biosciences at IIIT-Delhi.
+              Building at the intersection of healthcare, accessibility, and software.
+              Interested in medical imaging, biomedical AI, and computational biology.
+            </p>
+            <div class="social-row">
+              <a href="https://github.com/evanimenon" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/evanimenon" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path d="M18.5 0h-17C.675 0 0 .675 0 1.5v17C0 19.325.675 20 1.5 20h17c.825 0 1.5-.675 1.5-1.5v-17c0-.825-.675-1.5-1.5-1.5zM6 17H3V7h3v10zM4.5 5.817c-.967 0-1.75-.783-1.75-1.75s.783-1.75 1.75-1.75 1.75.783 1.75 1.75-.783 1.75-1.75 1.75zM17 17h-3v-4.892c0-3.368-4-3.113-4 0V17h-3V7h2.883v1.367h.042c.4-.758 1.383-1.558 2.85-1.558 3.05 0 3.608 2.008 3.608 4.617V17H17z"/></svg>
+                LinkedIn
+              </a>
+              <a href="cv.html">CV</a>
+            </div>
+          </div>
+          <img src="Images/evani.jpeg" alt="Evani Menon" class="hero-photo">
         </div>
       </section>
 
-      <!-- JOURNEY TIMELINE -->
-      <section style="padding-top: 3.5rem;">
+      <section class="journey-section">
         <p class="section-label">Journey</p>
 
         <div class="timeline">
 
-          <!-- May 2026 -->
           <div class="tl-group">
-            <div class="tl-month">May 2026</div>
-            <div class="tl-item">
-              <span class="tl-kind">Work</span>
-              <div class="tl-title">Software Engineer Intern</div>
-              <div class="tl-org">Bajaj Finserv Health</div>
-              <div class="tl-desc">Incoming role in software engineering at a leading Indian health-tech platform.</div>
+            <div class="tl-month">May '26</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Work]</span>
+                <span class="tl-desc">Joined <b>Bajaj Finserv Health</b> as a Software Engineer Intern for their health-tech platform.</span>
+              </div>
             </div>
           </div>
 
-          <!-- Jan 2026 -->
           <div class="tl-group">
-            <div class="tl-month">Jan 2026</div>
-            <div class="tl-item">
-              <span class="tl-kind">Project</span>
-              <div class="tl-title">Alzheimer's Progression Digital Twin</div>
-              <div class="tl-desc">ML system predicting cognitive decline from longitudinal ADNI clinical data (14,315 records). Bidirectional Attention-LSTM achieving MMSE MAE of 1.76 pts.</div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-kind">Project</span>
-              <div class="tl-title">Terrarium: Plant Journal &amp; Marketplace</div>
-              <div class="tl-desc">Full-stack MySQL/Flask/Node.js app for plant care tracking, marketplace purchases, and vacation-care booking.</div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-kind">Certification</span>
-              <div class="tl-title">Data or Specimens Only Research</div>
-              <div class="tl-org">CITI Program — Credential ID 74644625</div>
+            <div class="tl-month">Aug '25</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Research]</span>
+                <span class="tl-desc">Appointed Data Research Assistant at <b>Translational Biology Lab, IIIT-Delhi</b>, investigating transcriptional adaptation and mRNA decay.</span>
+              </div>
+              <div class="tl-item">
+                <span class="tl-kind">[Leadership]</span>
+                <span class="tl-desc">Founded <b>Unquote</b>, a sociopolitical student awareness club at IIIT-Delhi with over 50 members.</span>
+              </div>
             </div>
           </div>
 
-          <!-- Aug 2025 -->
           <div class="tl-group">
-            <div class="tl-month">Aug 2025</div>
-            <div class="tl-item">
-              <span class="tl-kind">Research</span>
-              <div class="tl-title">Data Research Assistant</div>
-              <div class="tl-org">Translational Biology Lab, IIIT-Delhi — Prof. Jaspreet Kaur</div>
-              <div class="tl-desc">Literature-driven research on transcriptional adaptation and mRNA decay mechanisms.</div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-kind">Project</span>
-              <div class="tl-title">University ERP System</div>
-              <div class="tl-desc">Full-stack Java/SQL academic workflow application for 500+ simulated users with secure authentication.</div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-kind">Leadership</span>
-              <div class="tl-title">Founder &amp; Coordinator, Unquote</div>
-              <div class="tl-org">IIIT-Delhi</div>
-              <div class="tl-desc">Student-led club for sociopolitical awareness; moderated campus discussions for a 50+ member base.</div>
+            <div class="tl-month">Jun '25</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Work]</span>
+                <span class="tl-desc">Interned at <b>Sri Sathya Sai Super Specialty Hospital</b> (Cardiology); designed an automated token workflow for patient management.</span>
+              </div>
             </div>
           </div>
 
-          <!-- Jun 2025 -->
           <div class="tl-group">
-            <div class="tl-month">Jun 2025</div>
-            <div class="tl-item">
-              <span class="tl-kind">Work</span>
-              <div class="tl-title">Non-Clinical Hospital Intern — Cardiology</div>
-              <div class="tl-org">Sri Sathya Sai Super Specialty Hospital</div>
-              <div class="tl-desc">Deployed automated token-based workflow to improve patient flow management.</div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-kind">Hackathon</span>
-              <div class="tl-title">Air Quality Visualizer, ISRO Bharatiya Antariksh Hackathon</div>
-              <div class="tl-desc">Led a team of four on real-time granular air quality prediction algorithm.</div>
+            <div class="tl-month">Apr '25</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Work]</span>
+                <span class="tl-desc">Developed <b>TravAcs</b>, a WCAG 2.1 AA accessible Flask application serving 100+ visually-impaired users across Delhi NCR.</span>
+              </div>
             </div>
           </div>
 
-          <!-- Nov 2025 -->
           <div class="tl-group">
-            <div class="tl-month">Nov 2025</div>
-            <div class="tl-item">
-              <span class="tl-kind">Project</span>
-              <div class="tl-title">Google Classroom Downloader</div>
-              <div class="tl-desc">Python FastAPI tool with Google OAuth 2.0 serving 2,000+ students. ★ 21 GitHub stars.</div>
+            <div class="tl-month">Jul '24</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Work]</span>
+                <span class="tl-desc">Joined <b>Wildlife Institute of India</b> as an SWE Intern (AI/ML); built the frontend for the CaTRAT system to classify 10K+ tiger conservation images.</span>
+              </div>
             </div>
           </div>
 
-          <!-- Apr 2025 -->
           <div class="tl-group">
-            <div class="tl-month">Apr 2025</div>
-            <div class="tl-item">
-              <span class="tl-kind">Work</span>
-              <div class="tl-title">Software Engineer</div>
-              <div class="tl-org">TravAcs — Advisor: Mr. Sparsh Sehgal</div>
-              <div class="tl-desc">Built accessible web platform for 100+ visually-impaired users across Delhi NCR using Flask and WCAG 2.1 AA standards.</div>
-            </div>
-          </div>
-
-          <!-- Oct 2025 -->
-          <div class="tl-group">
-            <div class="tl-month">Oct 2025</div>
-            <div class="tl-item">
-              <span class="tl-kind">Project</span>
-              <div class="tl-title">Secondary Protein Structure Predictor</div>
-              <div class="tl-desc">Web-based bioinformatic tool predicting α-helix and β-strand regions via the Chou-Fasman method. Validated against 20+ PDB structures.</div>
-            </div>
-          </div>
-
-          <!-- Jul 2024 -->
-          <div class="tl-group">
-            <div class="tl-month">Jul 2024</div>
-            <div class="tl-item">
-              <span class="tl-kind">Work</span>
-              <div class="tl-title">SWE Intern (AI/ML)</div>
-              <div class="tl-org">Wildlife Institute of India — CaTRAT</div>
-              <div class="tl-desc">Built frontend modules for an AI camera-trap wildlife classification system classifying 10K+ images for tiger conservation.</div>
-            </div>
-          </div>
-
-          <!-- Aug 2024 -->
-          <div class="tl-group">
-            <div class="tl-month">Aug 2024</div>
-            <div class="tl-item">
-              <span class="tl-kind">Education</span>
-              <div class="tl-title">B.Tech — Computer Science &amp; Biosciences</div>
-              <div class="tl-org">IIIT-Delhi · 2024–2028</div>
-              <div class="tl-desc">CGPA 7.6. 50% merit scholarship in 2nd year.</div>
+            <div class="tl-month">Aug '24</div>
+            <div class="tl-items">
+              <div class="tl-item">
+                <span class="tl-kind">[Education]</span>
+                <span class="tl-desc">Began B.Tech in CS &amp; Biosciences at <b>IIIT-Delhi</b> (2024–2028).</span>
+              </div>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- CONTACT -->
-      <section style="padding-top: 4rem; margin-top: 1rem; border-top: 1px solid var(--border);">
+      <section class="contact-section">
         <p class="section-label">Contact</p>
 
         <div class="contact-grid">
@@ -214,19 +143,18 @@
             <p>I'm currently exploring internship opportunities. If you think I'd be a good fit for your team, let's chat.</p>
             <p>I need your name and email but you'll receive nothing other than my reply.</p>
             <div class="social-row" style="margin-top:1rem;">
-              <a href="mailto:evani24210@iiitd.ac.in">evani24210@iiitd.ac.in</a>
-              <a href="https://linkedin.com/in/evanimenon" target="_blank">LinkedIn</a>
-              <a href="https://instagram.com/evanimenon" target="_blank">Instagram</a>
+              <a href="https://linkedin.com/in/evanimenon" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://instagram.com/evanimenon" target="_blank" rel="noopener">Instagram</a>
             </div>
           </div>
 
           <form class="contact-form" id="contact-form">
             <div class="form-row-2">
-              <input type="text"  name="user_name"    placeholder="Name"          required>
-              <input type="email" name="user_email"   placeholder="Email"         required>
+              <input type="text"  name="user_name"    placeholder="Name"    required>
+              <input type="email" name="user_email"   placeholder="Email"   required>
             </div>
-            <input    type="text"  name="user_subject" placeholder="Subject"        required>
-            <textarea             name="user_message" placeholder="Message"        required></textarea>
+            <input    type="text"  name="user_subject" placeholder="Subject" required>
+            <textarea             name="user_message" placeholder="Message" required></textarea>
             <div>
               <button type="submit" class="btn btn-primary">Send message</button>
             </div>
@@ -235,7 +163,7 @@
         </div>
       </section>
 
-    </div><!-- /page-wrap -->
+    </div>
   </main>
 
   <footer class="footer">
