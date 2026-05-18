@@ -1,260 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writing - Evani Menon</title>
-    <meta name="description" content="Essays, articles, and reflections on technology, society, and personal growth by Evani Menon">
-    <link rel="icon" type="image/png" href="Images/favicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing — Evani Menon</title>
+  <meta name="description" content="Essays, articles, and reflections by Evani Menon.">
+  <link rel="icon" type="image/png" href="Images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Evani Menon</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Portfolio</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="writing.html" class="nav-link active">Writing</a>
-                <a href="cv.html" class="nav-link">CV</a>
+
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Evani Menon</a>
+      <div class="nav-links">
+        <a href="index.html"    class="nav-link">Portfolio</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="writing.html"  class="nav-link active">Writing</a>
+        <a href="cv.html"       class="nav-link">CV</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" width="18" height="18" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <svg class="moon-icon" width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C6 3 6 6.5 8 8.5C10 10.5 13.5 10.5 15.5 9C16.5 9.5 17 10 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+
+      <h1 class="page-title">Writing</h1>
+      <p class="page-sub">Essays, articles, and reflections on technology, society, and personal growth.</p>
+
+      <!-- Search -->
+      <div class="search-wrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search-input" placeholder="Search articles…">
+      </div>
+
+      <!-- Tag filters -->
+      <div class="tag-row">
+        <button class="tag-btn active" data-tag="all">All</button>
+        <button class="tag-btn" data-tag="essay">Essay</button>
+        <button class="tag-btn" data-tag="article">Article</button>
+        <button class="tag-btn" data-tag="research">Research</button>
+        <button class="tag-btn" data-tag="personal">Personal</button>
+        <button class="tag-btn" data-tag="bookreview">Book Review</button>
+      </div>
+
+      <!-- Writing list -->
+      <div class="writing-list" id="writing-list">
+
+        <div class="writing-item" data-tags="research article">
+          <div>
+            <div class="writing-title">
+              <a href="Articles/social-stratification-neurodivergence-india.html">Social Stratification and Neurodivergence in India</a>
             </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
-                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                </svg>
-                <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M17 10.5C16 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 2 7.5 1C6 3 6 6.5 8 8.5C10 10.5 13.5 10.5 15.5 9C16.5 9.5 17 10 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+            <div class="writing-excerpt">A photo-essay on the invisible social gaps in support for autism care in India, using a primary interview with a mother.</div>
+            <div class="writing-meta">
+              <span class="tag">Research</span>&ensp;
+              <span class="tag">Article</span>
+            </div>
+          </div>
+          <div class="writing-date">Apr 4, 2025</div>
         </div>
-    </nav>
 
-    <main class="writing-page">
-        <section class="writing-hero">
-            <div class="container">
-                <h1 class="page-title">Writing</h1>
-                <p class="page-subtitle">Essays, articles, and reflections on technology, society, and personal growth</p>
-                
-                <div class="search-filter">
-                    <div class="search-box">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="m21 21-4.35-4.35"/>
-                        </svg>
-                        <input type="text" id="search-input" placeholder="Search articles..." />
-                    </div>
-                    
-                    <div class="tag-filters">
-                        <button class="tag-btn active" data-tag="all">All</button>
-                        <button class="tag-btn" data-tag="essay">#Essay</button>
-                        <button class="tag-btn" data-tag="article">#Article</button>
-                        <button class="tag-btn" data-tag="research">#Research</button>
-                        <button class="tag-btn" data-tag="personal">#Personal</button>
-                        <button class="tag-btn" data-tag="bookreview">#BookReview</button>
-                    </div>
-                </div>
+        <!-- <div class="writing-item" data-tags="essay personal">
+          <div>
+            <div class="writing-title">Breaking the Binary</div>
+            <div class="writing-excerpt">A critical analysis of gender norms and identity constructs in modern discourse.</div>
+            <div class="writing-meta">
+              <span class="tag">Essay</span>&ensp;
+              <span class="tag">Personal</span>
             </div>
-        </section>
-
-        <section class="writing-content">
-            <div class="container">
-                <div class="featured-writing">
-                    <a href="Articles/social-stratification-neurodivergence-india.html" class="featured-post-link">
-                        <article class="featured-post" data-tags="research article">
-                            <div class="featured-post-tag">#Research</div>
-                            <h2 class="featured-post-title">Social Stratification and Neurodivergence in India</h2>
-                            <p class="featured-post-excerpt">
-                                A photo-essay on the invisible social gaps in support for autism care in India, using a primary interview with a mother.
-                            </p>
-                            <div class="post-meta">
-                                <span class="post-date">April 4, 2025</span>
-                            </div>
-                        </article>
-                    </a>
-                </div>
-
-                <div class="posts-grid">
-                    <article class="post-card" data-tags="essay personal">
-                        <div class="post-tags">
-                            <span class="post-tag">#Essay</span>
-                            <span class="post-tag">#Personal</span>
-                        </div>
-                        <h3 class="post-title">Breaking the Binary</h3>
-                        <p class="post-excerpt">
-                            A critical analysis of gender norms and identity constructs in modern discourse. Examining how binary thinking 
-                            limits our understanding of human diversity and identity.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">8 min read</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card" data-tags="article research">
-                        <div class="post-tags">
-                            <span class="post-tag">#Article</span>
-                            <span class="post-tag">#Research</span>
-                        </div>
-                        <h3 class="post-title">The Ethics of AI in Healthcare</h3>
-                        <p class="post-excerpt">
-                            Examining ethical considerations in deploying artificial intelligence systems within medical contexts. 
-                            Balancing innovation with patient rights and medical ethics.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">12 min read</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card" data-tags="personal">
-                        <div class="post-tags">
-                            <span class="post-tag">#Personal</span>
-                        </div>
-                        <h3 class="post-title">Reflections on Accessibility</h3>
-                        <p class="post-excerpt">
-                            Personal observations from working on inclusive technology platforms. Lessons learned from building 
-                            TravAcs and understanding the needs of visually-impaired users.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">6 min read</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card" data-tags="bookreview">
-                        <div class="post-tags">
-                            <span class="post-tag">#BookReview</span>
-                        </div>
-                        <h3 class="post-title">Book Review: The Gene by Siddhartha Mukherjee</h3>
-                        <p class="post-excerpt">
-                            An intimate history of genetics that weaves science with personal narrative. Mukherjee explores the 
-                            biological and social dimensions of heredity and identity.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">10 min read</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card" data-tags="essay personal">
-                        <div class="post-tags">
-                            <span class="post-tag">#Essay</span>
-                            <span class="post-tag">#Personal</span>
-                        </div>
-                        <h3 class="post-title">Leadership Beyond Titles</h3>
-                        <p class="post-excerpt">
-                            What I learned founding Unquote and leading student initiatives at IIIT-Delhi. On building communities, 
-                            finding your voice, and creating spaces for others to thrive.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">7 min read</span>
-                        </div>
-                    </article>
-
-                    <article class="post-card" data-tags="article">
-                        <div class="post-tags">
-                            <span class="post-tag">#Article</span>
-                        </div>
-                        <h3 class="post-title">The Future of Computational Biology</h3>
-                        <p class="post-excerpt">
-                            Exploring how computational methods are revolutionizing biological research. From protein structure 
-                            prediction to personalized medicine and beyond.
-                        </p>
-                        <div class="post-meta">
-                            <span class="post-date">Coming Soon</span>
-                            <span class="post-readtime">11 min read</span>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="coming-soon-notice">
-                    <div class="notice-content">
-                        <h3>More Writing Coming Soon</h3>
-                        <p>I'm currently working on several essays and articles. Subscribe to get notified when new content is published!</p>
-                        <form class="subscribe-form">
-                            <input type="email" placeholder="Enter your email" required>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>Â© 2026 Evani Menon. Building at the intersection of technology and society.</p>
+          </div>
+          <div class="writing-date">Coming soon</div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
-    <script>
-        // Search functionality
-        const searchInput = document.getElementById('search-input');
-        const postCards = document.querySelectorAll('.post-card, .featured-post');
-        
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            
-            postCards.forEach(card => {
-                const title = card.querySelector('.post-title, .featured-post-title').textContent.toLowerCase();
-                const excerpt = card.querySelector('.post-excerpt, .featured-post-excerpt').textContent.toLowerCase();
-                
-                if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
-                    card.style.display = '';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        });
-        
-        // Tag filtering
-        const tagBtns = document.querySelectorAll('.tag-btn');
-        
-        tagBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const tag = btn.dataset.tag;
-                
-                // Update active button
-                tagBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                // Clear search
-                searchInput.value = '';
-                
-                // Filter posts
-                postCards.forEach(card => {
-                    const tags = card.dataset.tags || '';
-                    
-                    if (tag === 'all' || tags.includes(tag)) {
-                        card.style.display = '';
-                        setTimeout(() => card.classList.add('visible'), 10);
-                    } else {
-                        card.classList.remove('visible');
-                        setTimeout(() => card.style.display = 'none', 300);
-                    }
-                });
-            });
-        });
-        
-        // Subscribe form
-        document.querySelector('.subscribe-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for subscribing! You\'ll be notified when new content is published.');
-            e.target.reset();
-        });
-        
-        // Initial animation
-        setTimeout(() => {
-            postCards.forEach((card, index) => {
-                setTimeout(() => card.classList.add('visible'), index * 100);
-            });
-        }, 100);
-    </script>
+        <div class="writing-item" data-tags="article research">
+          <div>
+            <div class="writing-title">The Ethics of AI in Healthcare</div>
+            <div class="writing-excerpt">Examining ethical considerations in deploying AI systems within medical contexts.</div>
+            <div class="writing-meta">
+              <span class="tag">Article</span>&ensp;
+              <span class="tag">Research</span>
+            </div>
+          </div>
+          <div class="writing-date">Coming soon</div>
+        </div>
+
+        <div class="writing-item" data-tags="personal">
+          <div>
+            <div class="writing-title">Reflections on Accessibility</div>
+            <div class="writing-excerpt">Lessons learned from building TravAcs and understanding the needs of visually-impaired users.</div>
+            <div class="writing-meta">
+              <span class="tag">Personal</span>
+            </div>
+          </div>
+          <div class="writing-date">Coming soon</div>
+        </div>
+
+        <div class="writing-item" data-tags="bookreview">
+          <div>
+            <div class="writing-title">Book Review: <em>The Gene</em> by Siddhartha Mukherjee</div>
+            <div class="writing-excerpt">An intimate history of genetics that weaves science with personal narrative.</div>
+            <div class="writing-meta">
+              <span class="tag">Book Review</span>
+            </div>
+          </div>
+          <div class="writing-date">Coming soon</div>
+        </div>
+
+        <div class="writing-item" data-tags="essay personal">
+          <div>
+            <div class="writing-title">Leadership Beyond Titles</div>
+            <div class="writing-excerpt">What I learned founding Unquote and leading student initiatives at IIIT-Delhi.</div>
+            <div class="writing-meta">
+              <span class="tag">Essay</span>&ensp;
+              <span class="tag">Personal</span>
+            </div>
+          </div>
+          <div class="writing-date">Coming soon</div>
+        </div>
+
+        <div class="writing-item" data-tags="article">
+          <div>
+            <div class="writing-title">The Future of Computational Biology</div>
+            <div class="writing-excerpt">How computational methods are revolutionizing biological research — from protein structure prediction to personalised medicine.</div>
+            <div class="writing-meta">
+              <span class="tag">Article</span>
+            </div>
+          </div>
+          <div class="writing-date">Coming soon</div>
+        </div> -->
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Evani Menon</span>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="index.html">Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const tagBtns     = document.querySelectorAll('.tag-btn');
+    const items       = document.querySelectorAll('.writing-item');
+
+    function applyFilters() {
+      const term    = searchInput.value.toLowerCase();
+      const active  = document.querySelector('.tag-btn.active').dataset.tag;
+
+      items.forEach(item => {
+        const title   = item.querySelector('.writing-title').textContent.toLowerCase();
+        const excerpt = item.querySelector('.writing-excerpt').textContent.toLowerCase();
+        const tags    = item.dataset.tags || '';
+
+        const matchTag    = active === 'all' || tags.includes(active);
+        const matchSearch = !term || title.includes(term) || excerpt.includes(term);
+
+        item.style.display = (matchTag && matchSearch) ? '' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+
+    tagBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tagBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+      });
+    });
+  </script>
 </body>
 </html>
