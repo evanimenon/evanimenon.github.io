@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -35,7 +35,6 @@
       <h1 class="page-title">Projects</h1>
       <p class="page-sub">Work in computer science, bioinformatics, and software engineering.</p>
 
-      <!-- Filter -->
       <div class="filter-row" id="filter-row">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="web">Web</button>
@@ -44,98 +43,189 @@
         <button class="filter-btn" data-filter="tools">Tools</button>
       </div>
 
-      <!-- Project list -->
-      <div class="proj-list" id="proj-list">
+      <div class="proj-grid" id="proj-list">
 
-        <div class="proj-item" data-cat="web tools">
-          <div>
-            <div class="proj-name">Google Classroom Downloader</div>
-            <div class="proj-desc">Production-grade OAuth-verified FastAPI web app enabling bulk-download of Google Classroom materials. Deployed on Cloud Run. Serves 2,000+ students. ★ 21 GitHub stars.</div>
-            <div class="proj-tags">
+        <!-- FEATURED: Alzheimer's Digital Twin (spans both columns) -->
+        <div class="proj-card featured" data-cat="bio">
+          <div class="proj-media" id="slides-alzheimer">             
+            <img src="Images/digital-twin/brain_atrophy_3d.png" alt="3D Brain Visualisation Demo" class="active">
+            <img src="Images/digital-twin/results_dashboard.png" alt="Results Dashboard">
+           
+            <!-- <div class="proj-media-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Images coming soon</span>
+            </div> -->
+          </div>
+          <div class="proj-body">
+            <span class="featured-badge">
+              <svg width="8" height="8" viewBox="0 0 12 12" fill="currentColor"><path d="M6 0l1.5 4.5H12L8.25 7.25 9.75 12 6 9.25 2.25 12l1.5-4.75L0 4.5h4.5z"/></svg>
+              Featured
+            </span>
+            <div class="proj-card-name">Alzheimer's Progression Digital Twin</div>
+            <div class="proj-card-desc">ML system predicting cognitive decline and brain atrophy from 14,315 longitudinal ADNI records. Bidirectional Attention-LSTM (MMSE MAE 1.76), XGBoost MCI&rarr;Dementia AUC 0.90. Interactive Dash app with Monte Carlo simulation.</div>
+            <div class="proj-card-tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">XGBoost</span>
+              <span class="tag">Dash</span>
+            </div>
+            <div class="proj-card-footer">
+              <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+                <a href="https://github.com/evanimenon/alzheimers-digital-twin" target="_blank" class="proj-card-link">GitHub &uarr;</a>
+                <button class="pdf-toggle-btn" onclick="togglePdf(this,'pdf-alzheimer')" aria-expanded="false">
+                  <svg width="12" height="12" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V6l-4-4z"/><path d="M14 2v4h4M10 9v6M7 12h6"/></svg>
+                  <span class="pdf-btn-label">View Report</span>
+                  <svg class="chevron" width="11" height="11" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8l5 5 5-5"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Inline PDF panel. Update src to your actual PDF path. -->
+          <div class="pdf-panel" id="pdf-alzheimer">
+            <iframe src="Images/digital-twin/Alzheimer's Progression Digital Twin.pdf" title="Alzheimer's Digital Twin Report" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <!-- Google Classroom Downloader -->
+        <div class="proj-card" data-cat="web tools">
+          <!-- <div class="proj-media" id="slides-gcd">
+             ADD IMAGES:
+            <img src="Images/gcd/screenshot1.png" alt="Upload interface" class="active">
+            <img src="Images/gcd/screenshot2.png" alt="Download progress">
+            
+            <div class="proj-media-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Images coming soon</span>
+            </div>
+          </div> -->
+          <div class="proj-body">
+            <div class="proj-card-name">Google Classroom Downloader</div>
+            <div class="proj-card-desc">Production-grade OAuth-verified FastAPI web app enabling bulk-download of Google Classroom materials. Deployed on Cloud Run. Serves 2,000+ students. &star; 21 GitHub stars.</div>
+            <div class="proj-card-tags">
               <span class="tag">Python</span>
               <span class="tag">FastAPI</span>
               <span class="tag">OAuth</span>
               <span class="tag">Cloud Run</span>
               <span class="tag">Docker</span>
             </div>
-          </div>
-          <a href="https://github.com/evanimenon/google-classroom-downloader" target="_blank" class="proj-link">GitHub ↗</a>
-        </div>
-
-        <div class="proj-item" data-cat="bio">
-          <div>
-            <div class="proj-name">Alzheimer's Progression Digital Twin</div>
-            <div class="proj-desc">ML system predicting cognitive decline and brain atrophy from 14,315 longitudinal ADNI records. Bidirectional Attention-LSTM (MMSE MAE 1.76), XGBoost MCI→Dementia AUC 0.90. Interactive Dash app with Monte Carlo simulation.</div>
-            <div class="proj-tags">
-              <span class="tag">Python</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">XGBoost</span>
-              <span class="tag">Dash</span>
+            <div class="proj-card-footer">
+              <a href="https://github.com/evanimenon/google-classroom-downloader" target="_blank" class="proj-card-link">GitHub &uarr;</a>
             </div>
           </div>
-          <a href="https://github.com/evanimenon" target="_blank" class="proj-link">GitHub ↗</a>
         </div>
 
-        <div class="proj-item" data-cat="web academic">
-          <div>
-            <div class="proj-name">Terrarium: Plant Journal &amp; Marketplace</div>
-            <div class="proj-desc">Full-stack database-driven app in MySQL, Flask, and Node.js for plant care tracking, marketplace purchases, and vacation-care booking. SQL triggers for automated stock validation across 7 relational entities.</div>
-            <div class="proj-tags">
+        <!-- Terrarium -->
+        <div class="proj-card" data-cat="web academic">
+          <!-- <div class="proj-media" id="slides-terrarium">
+             ADD IMAGES:
+            <img src="Images/terrarium/screenshot1.png" alt="Plant journal" class="active">
+            <img src="Images/terrarium/screenshot2.png" alt="Marketplace view">
+            
+            <div class="proj-media-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Images coming soon</span>
+            </div>
+          </div> -->
+          <div class="proj-body">
+            <div class="proj-card-name">Terrarium: Plant Journal &amp; Marketplace</div>
+            <div class="proj-card-desc">Full-stack database-driven app in MySQL, Flask, and Node.js for plant care tracking, marketplace purchases, and vacation-care booking. SQL triggers for automated stock validation across 7 relational entities.</div>
+            <div class="proj-card-tags">
               <span class="tag">MySQL</span>
               <span class="tag">Flask</span>
               <span class="tag">Node.js</span>
             </div>
+            <div class="proj-card-footer">
+              <a href="https://github.com/evanimenon/Terrarium" target="_blank" class="proj-card-link">GitHub &uarr;</a>
+            </div>
           </div>
-          <a href="https://github.com/evanimenon" target="_blank" class="proj-link">GitHub ↗</a>
         </div>
 
-        <div class="proj-item" data-cat="web academic">
-          <div>
-            <div class="proj-name">University ERP System</div>
-            <div class="proj-desc">Full-stack Java/SQL application streamlining academic workflows for 500+ simulated users. Secure authentication with salting/hashing. ★ 1 star.</div>
-            <div class="proj-tags">
+        <!-- University ERP -->
+        <div class="proj-card" data-cat="web academic">
+          <div class="proj-media" id="slides-erp">
+
+            <img src="Images/uni-erp/signin.png" alt="Login screen" class="active">
+            <!-- <img src="Images/uni-erp/registration.png" alt="Registration">
+            <img src="Images/uni-erp/grades.png" alt="Grades">
+            <img src="Images/uni-erp/sections.png" alt="Sections">
+            <img src="Images/uni-erp/admin.png" alt="Admin Portal">
+            <img src="Images/uni-erp/courses.png" alt="Courses">
+            <img src="Images/uni-erp/maintain.png" alt="Maintenance"> -->
+           
+            <!-- <div class="proj-media-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Images coming soon</span>
+            </div> -->
+          </div>
+          <div class="proj-body">
+            <div class="proj-card-name">University ERP System</div>
+            <div class="proj-card-desc">Full-stack Java/SQL application streamlining academic workflows for 500+ simulated users. Secure authentication with salting/hashing. &star; 1 star.</div>
+            <div class="proj-card-tags">
               <span class="tag">Java</span>
               <span class="tag">MySQL</span>
               <span class="tag">Swing</span>
             </div>
+            <div class="proj-card-footer">
+              <a href="https://github.com/evanimenon/IIITD-Academic-ERP" target="_blank" class="proj-card-link">GitHub &uarr;</a>
+            </div>
           </div>
-          <a href="https://github.com/evanimenon/IIITD-Academic-ERP" target="_blank" class="proj-link">GitHub ↗</a>
         </div>
 
-        <div class="proj-item" data-cat="bio">
-          <div>
-            <div class="proj-name">Secondary Protein Structure Predictor</div>
-            <div class="proj-desc">Web-based bioinformatic tool predicting α-helix and β-strand regions via the Chou-Fasman method. Validated against 20+ known PDB structures.</div>
-            <div class="proj-tags">
+        <!-- Secondary Protein Structure Predictor -->
+        <div class="proj-card" data-cat="bio">
+          <!-- <div class="proj-media" id="slides-protein">
+            ADD IMAGES:
+            <img src="Images/prot-structure/dashboard.png" alt="Dashboard" class="active">
+            <img src="Images/prot-structure/results.png" alt="Results">
+            <img src="Images/prot-structure/alphabeta.png" alt="Results">
+           
+
+          </div> -->
+          <div class="proj-body">
+            <div class="proj-card-name">Secondary Protein Structure Predictor</div>
+            <div class="proj-card-desc">Web-based bioinformatic tool predicting &alpha;-helix and &beta;-strand regions via the Chou-Fasman method. Validated against 20+ known PDB structures.</div>
+            <div class="proj-card-tags">
               <span class="tag">Python</span>
               <span class="tag">Biopython</span>
               <span class="tag">PyMOL</span>
             </div>
+            <div class="proj-card-footer">
+              <a href="https://github.com/evanimenon/secondary-structure-predictor" target="_blank" class="proj-card-link">GitHub &uarr;</a>
+            </div>
           </div>
-          <a href="https://github.com/evanimenon/secondary-structure-predictor" target="_blank" class="proj-link">GitHub ↗</a>
         </div>
 
-        <div class="proj-item" data-cat="academic">
-          <div>
-            <div class="proj-name">RISC-V Assembler &amp; Simulator</div>
-            <div class="proj-desc">Cycle-accurate simulator for RV32I instruction set with label resolution, branching logic, stack memory, and trace logging. CSE112 Final Project.</div>
-            <div class="proj-tags">
+        <!-- RISC-V Assembler & Simulator -->
+        <div class="proj-card" data-cat="academic">
+          <!-- <div class="proj-media" id="slides-riscv">
+            ADD IMAGES:
+            <img src="Images/riscv/screenshot1.png" alt="Simulator trace output" class="active">
+            -->
+            <!-- <div class="proj-media-placeholder">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Images coming soon</span>
+            </div>
+          </div> -->
+          <!-- <div class="proj-body">
+            <div class="proj-card-name">RISC-V Assembler &amp; Simulator</div>
+            <div class="proj-card-desc">Cycle-accurate simulator for RV32I instruction set with label resolution, branching logic, stack memory, and trace logging. CSE112 Final Project.</div>
+            <div class="proj-card-tags">
               <span class="tag">Python</span>
               <span class="tag">Computer Architecture</span>
             </div>
-          </div>
-          <a href="https://github.com/evanimenon/riscv-assembler-simulator" target="_blank" class="proj-link">GitHub ↗</a>
+            <div class="proj-card-footer">
+              <a href="https://github.com/evanimenon/riscv-assembler-simulator" target="_blank" class="proj-card-link">GitHub &uarr;</a>
+            </div>
+          </div> -->
         </div>
 
-
       </div>
-
     </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <span>© 2026 Evani Menon</span>
+      <span>&copy; 2026 Evani Menon</span>
       <div style="display:flex; gap:1.5rem;">
         <a href="index.html">Portfolio</a>
         <a href="writing.html">Writing</a>
@@ -145,21 +235,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const items = document.querySelectorAll('.proj-item');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const f = btn.dataset.filter;
-        items.forEach(item => {
-          const cats = item.dataset.cat.split(' ');
-          item.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
-        });
-      });
-    });
-  </script>
 </body>
 </html>
